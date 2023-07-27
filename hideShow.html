@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="main">Hello!</p>
+    <button onclick="demo()">Click Me!</button>
+    <script>
+        var div = document.getElementById('main');
+        var display = 0;
+        function demo(){
+            if(display == 1){
+                div.style.display = "block";
+                display = 0;
+            }
+            else{
+                div.style.display = "none";
+                display = 1;
+            }
+        }
+    </script>
+</body>
+</html>
